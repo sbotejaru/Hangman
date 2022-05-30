@@ -1,0 +1,14 @@
+﻿<Window x:Class="TEMA2.UserInput"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:TEMA2"
+        mc:Ignorable="d"
+        Title="Select your username" Height="100" Width="300" ResizeMode="NoResize">    
+    <Grid>
+        <Label Content="Username: " Margin="0,19,213,10"/>
+        <TextBox Margin="79,19,60,21" Name="txtbox" Text="{Binding UsernameInput}"/>
+        <Button Margin="240,19,10,21" Content="Save" Command="{Binding SaveUsernameInputCommand}"/>
+    </Grid>
+</Window>
